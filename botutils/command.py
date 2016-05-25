@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from __future__ import unicode_literals
+
 from subprocess import check_output
 from subprocess import CalledProcessError
 import logging
