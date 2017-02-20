@@ -58,7 +58,7 @@ def extract_frames(filename, destination, frame_rate):
 
 # Adapted from http://askubuntu.com/a/723362
 def get_frame_rate(filename, default):
-    rate = ffprobe_stream(filename, 'r_frame_rate').split('/')
+    rate = ffprobe_stream(filename, 'avg_frame_rate').split('/')
 
     if len(rate) == 1:
         return float(rate[0])
